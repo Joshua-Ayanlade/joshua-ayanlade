@@ -1,44 +1,13 @@
-const form= document.querySelector("#myform");
-const textInput= document.querySelector("#text1");
-const emailInput= document.querySelector("#email");
-const telInput = document.querySelector("#tel");
-const msgInput =document.querySelector("#message");
-const msg =document.querySelector("#msg");
-const send= document.querySelector("#send");
+
 const hire= document.querySelector("#hire");
+const get= document.querySelector("#get");
 const about= document.querySelector("#abt");
 const contact= document.querySelector("#contact");
 const aboutme= document.querySelector("#txt");
 const detail= document.querySelector(".detail");
 
 
-form.addEventListener("submit", onsubmit)
 
-function onsubmit(e){
-    e.preventDefault();
-
-    
-
-        if(textInput.value=="" || emailInput.value=="" || telInput.value=="" || msgInput.value==""){
-            msg.innerHTML="Please, enter all fields";
-            msg.classList.add("error");
-
-            setTimeout(toremove, 4000)
-            function toremove(){
-                msg.remove()
-            }
-        } 
-        else{
-            console.log("success")
-
-            textInput.value="";
-            emailInput.value="";
-            telInput.value="";
-            msgInput.value="";
-        }
-    
-   
-}
 
 // To add style when filling form
 const text= document.querySelector("#text1");
@@ -102,15 +71,15 @@ function tomsg(e){
 // End of style to form
 
 
-hire.addEventListener("click", tohire)
+hire.addEventListener("mouseout", tohire)
 
 function tohire(e){
     e.preventDefault();
-    hire.style.background ="red";
+    get.classList.add("error");
 
     setTimeout(remove,3000)
     function remove(){
-        hire.style.background="blue";
+        get.classList.remove("error");
     }
 }
 
