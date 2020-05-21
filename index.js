@@ -71,7 +71,7 @@ function tomsg(e){
 // End of style to form
 
 
-hire.addEventListener("mouseout", tohire)
+hire.addEventListener("mouseover", tohire)
 
 function tohire(e){
     e.preventDefault();
@@ -85,7 +85,7 @@ function tohire(e){
 
 
 
-about.addEventListener("mouseout", toabout)
+about.addEventListener("mouseover", toabout)
 
 function toabout(e){
     e.preventDefault();
@@ -98,7 +98,7 @@ function toabout(e){
 
 }
 
-contact.addEventListener("mouseout", oncontact)
+contact.addEventListener("mouseover", oncontact)
 
 function oncontact(e){
     e.preventDefault();
@@ -113,7 +113,7 @@ function oncontact(e){
 const abt= document.querySelector("#abt2");
 const cont= document.querySelector("#cont2");
 
-abt.addEventListener("mouseout",abt2)
+abt.addEventListener("mouseover",abt2)
 
 function abt2(e){
     e.preventDefault();
@@ -125,7 +125,7 @@ function abt2(e){
     }
 }
 
-cont.addEventListener("mouseout", cont2)
+cont.addEventListener("mouseover", cont2)
 
 function cont2(e){
     e.preventDefault();
